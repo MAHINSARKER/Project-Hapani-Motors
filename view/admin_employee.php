@@ -100,7 +100,7 @@ function confirmDelete(id) {
         showCancelButton: true,
         confirmButtonColor: 'red',
         cancelButtonColor: 'black',
-        confirmButtonText: 'Yes, delete it!'
+        confirmButtonText: 'Yes, Delete it!'
     }).then((result) => {
         if (result.isConfirmed) {
             window.location.href = "Admin_EmployeeController.php?delete=" + id;

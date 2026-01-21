@@ -25,6 +25,7 @@ if(isset($_POST['add_product'])){
         mkdir($target_dir, 0777, true);
     }
 
+    //image upload
     $image_name = basename($_FILES["pic"]["name"]);
     $target_file = $target_dir . $image_name;
     $uploadOk = 1;

@@ -115,9 +115,8 @@
             } else if(response == "login_required"){
                 Swal.fire({
                     icon: 'warning', title: 'Login Required', text: 'Please login to shop!',
-                    confirmButtonText: 'Login'
                 }).then((result) => {
-                    if (result.isConfirmed) { window.location.href = "UserAuthController.php"; }
+                    if (result.isConfirmed) { window.location.href = "VehicleController.php"; }
                 });
             } else {
                 Swal.fire("Error", "Failed: " + response, "error");

@@ -26,8 +26,6 @@
         ?>
     </header>
 
-    <div class="page-spacer"></div>
-
     <section class="view_page">
         
         <h1 class="heading">Vehicle Info</h1>

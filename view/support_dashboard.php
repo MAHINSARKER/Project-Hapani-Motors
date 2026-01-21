@@ -39,7 +39,7 @@
                     <?php 
                     if(!empty($orders_list)){
                         foreach($orders_list as $order){
-                            // Normalize status check (handle 'Delivered' or 'delivered')
+                       
                             $is_delivered = (strtolower($order['comment']) == 'delivered');
                     ?> 
                     <tr>

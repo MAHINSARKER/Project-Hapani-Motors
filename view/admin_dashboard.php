@@ -47,7 +47,7 @@ setInterval(function() {
         }
     }
 
-    xhttp.open("GET", "../controller/AjaxAdminController.php?action=get_stats");
+    xhttp.open("GET", "../controller/Admin_AjaxController.php?action=get_stats");
     xhttp.send();
 }, 3000); 
 </script>

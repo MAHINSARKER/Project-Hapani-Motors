@@ -18,7 +18,7 @@
             
             <li><a href="../controller/CartController.php">Cart</a></li>
             
-            <li><a href="../controller/UserContactController.php">Contact</a></li>
+            <li><a href="../controller/ContactController.php">Contact</a></li>
             
             <li id="sign_up"> 
                 <a href="../controller/ProfileController.php">Profile</a>

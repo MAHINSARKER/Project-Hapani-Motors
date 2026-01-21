@@ -5,7 +5,7 @@ session_start();
 include '../model/support_model.php';
 
 if(!isset($_SESSION['user_id'])){
-    header('location: UserAuthController.php');
+    header('location: Admin_LoginController.php');
     exit;
 }
 

@@ -128,7 +128,7 @@ if(isset($_POST['action']) && $_POST['action'] == 'reset_password'){
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     // Using md5() to match typical project standards. 
     // If your login uses password_hash(), remove md5() and use password_hash($pass, PASSWORD_DEFAULT);
-    $pass = md5($_POST['pass']); 
+    $pass = $_POST['pass']; 
     
     // 1. Check if email exists
     $check_email = mysqli_query($conn, "SELECT * FROM `user` WHERE email = '$email'");

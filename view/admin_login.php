@@ -22,7 +22,7 @@
             <input type="password" name="password" id="password" placeholder="Enter Password" class="box" required>            
             <input type="submit" name="submit" value="Login" class="login_button">
             <p style="text-align: center; margin-top: 15px; font-size: 1.2rem;">
-            <a href="../view/forgot_password.php" style="color: black;">Forgot Password?</a></p>
+            <a href="ForgotPasswordController.php" style="color: black;">Forgot Password?</a></p>
             
             <div class="admin-links">
                 <p class="reg">Register as <a href="AdminRegisterController.php">Admin</a> / <a href="Support_RegisterController.php">Support</a></p>

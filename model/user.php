@@ -91,6 +91,27 @@ function updateUserProfile($user_id, $name, $email, $number, $address, $password
     }
 }
 
+function resetUserPassword($email, $password) {
+    $conn = mysqli_connect("localhost", "root", "", "hapani");
+    
+    $email = mysqli_real_escape_string($conn, $email);
+    $password = mysqli_real_escape_string($conn, $password);
+
+    // 1. Check if email exists
+    $check = mysqli_query($conn, "SELECT * FROM user WHERE email = '$email'");
+    
+    if (mysqli_num_rows($check) > 0) {
+        $update = "UPDATE user SET password = '$password' WHERE email = '$email'";
+        if (mysqli_query($conn, $update)) {
+            mysqli_close($conn);
+            return true;
+        } else {
+            return mysqli_error($conn);
+        }
+    } else {
+        return "Email address not found in our system.";
+    }
+}
 
 
 ?>

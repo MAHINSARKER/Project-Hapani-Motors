@@ -62,5 +62,7 @@
         </script>
     <?php endif; ?>
 
+    <?php include 'user_footer.php' ?>
+
 </body>
 </html>
